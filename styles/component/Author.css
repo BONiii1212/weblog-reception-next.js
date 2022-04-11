@@ -1,6 +1,8 @@
 .author-contain{
-    height: 18rem;
+    border-radius: 1rem;
+    background-color: rgba(235,228,228,.8);
     position: relative;
+    margin-bottom: 1rem;
 }
 .author-avatar{
     display: flex;
@@ -18,7 +20,9 @@
 .author-icon{
     display: flex;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 .author-divider{
     font-size: 1rem;
+    color: black;
 }

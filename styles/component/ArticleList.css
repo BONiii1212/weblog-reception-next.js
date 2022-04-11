@@ -1,0 +1,26 @@
+.articlelist-item{
+    margin: 1rem;
+    padding: .5rem;
+    overflow:hidden;
+}
+.articlelist-title{
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+.articlelist-inf{
+    font-size: 1rem;
+    margin: .5rem;
+    color: #7B7A79;
+}
+.articlelist-introduce{
+    font-size: 1rem;
+    margin: .5rem;
+}
+.kongge{
+    margin-right: .5rem;
+}
+.articlelist-img{
+    border-radius: 2rem;
+    width: 14rem;
+    height: 8rem;
+}

@@ -1,5 +1,5 @@
 .header{
-    background-color: #fff;
+    background-color: rgba(235,228,228,.8);
     padding: .4rem;
     overflow: hidden;
     height: 3rem;
@@ -22,4 +22,12 @@
     font-size: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+.header-ul{
+    display: flex;
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+.header-ul li{
+    margin-right: 2rem;
 }
