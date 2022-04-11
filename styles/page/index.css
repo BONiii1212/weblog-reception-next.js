@@ -1,0 +1,29 @@
+.home-background{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../static/img/wallhaven-m9q6e9_3840x2400.jpg);
+}
+.home-div{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rem;
+    margin-top: -10rem;
+}
+.avatar-div{
+    display: flex;
+    justify-content: center;
+}
+.inf-card{
+    text-align: center;
+    font-size: 1.4rem;
+    border: 0;
+    background-color: rgba(0,0,0,0.3);
+    color:rgb(255,255,255);
+    border-radius: .5rem;
+}
