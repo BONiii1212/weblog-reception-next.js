@@ -1,0 +1,27 @@
+.article{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../static/img/wallhaven-3z32j3_1920x1080.png');
+}
+.contain{
+    height: 60rem;
+    width: 60rem;
+    margin-left: calc(50% - 30rem);
+    border: 3px;
+    border-color: black;
+}
+.contain-title{
+    height: 10rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 10rem;
+    color: rgb(255, 255, 255);
+}  
+.article-left {
+    border-radius: 1rem;
+    background-color: rgba(255,255, 255, 0.4);
+}
+.article-right{
+    border-radius: 1rem;
+    background-color: rgba(255,255, 255, 0.4);
+}
