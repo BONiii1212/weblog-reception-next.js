@@ -5,6 +5,7 @@ import Author from "../component/Author";
 import Classification from "../component/Classification";
 import ArticleList from "../component/ArticleList";
 import { Pagination } from "antd";
+import Footer from "../component/Footer";
 
 export default function Article(){
 
@@ -16,7 +17,7 @@ export default function Article(){
                     <Col span={24} className="contain-title">
                         <span>文章｜Article</span>
                     </Col>
-                    <Col span={19}>
+                    <Col span={18}>
                         <div className="article-left">
                             <ArticleList/>
                             <div className="article-pagination">
@@ -25,13 +26,14 @@ export default function Article(){
                             
                         </div>
                     </Col>
-                    <Col span={5}>
+                    <Col span={6}>
                         <div className="article-right">
                             <Author/>
                             <Classification/>
                         </div>
                     </Col>
                 </Row>
+                <Footer/>
             </div>
         </div>
     )

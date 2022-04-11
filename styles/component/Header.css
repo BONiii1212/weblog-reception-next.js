@@ -1,9 +1,9 @@
 .header{
-    background-color: rgba(235,228,228,.8);
+    background-color: rgba(255,255,255,.9);
     padding: .4rem;
     overflow: hidden;
     height: 3rem;
-    border-bottom: 1.5px solid #ccc;
+    border-bottom: 1.5px solid rgb(235, 224, 224);
 }
 .header-logo{
     color: #1e90ff;

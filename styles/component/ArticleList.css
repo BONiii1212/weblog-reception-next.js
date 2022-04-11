@@ -20,6 +20,7 @@
     margin-right: .5rem;
 }
 .articlelist-img{
+    overflow: hidden;
     border-radius: 2rem;
     width: 14rem;
     height: 8rem;

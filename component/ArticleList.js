@@ -1,5 +1,5 @@
 import react,{useState} from "react";
-import { Col, List, Row,} from "antd";
+import { Col, List, Row,Divider} from "antd";
 import { createFromIconfontCN } from '@ant-design/icons';
 
 const IconFont = createFromIconfontCN({
@@ -21,12 +21,12 @@ export default function ArticleList(){
             article.map((item)=>
                 <div className="articlelist-item">
                     <Row>
-                        <Col span={6}>
+                        <Col span={7.5}>
                             <div className="articlelist-img">
                                 <img width={"100%"} height={"100%"} src={item.url}/>
                             </div>
                         </Col>
-                        <Col span={18}>
+                        <Col span={16.5}>
                             <div style={{display:"flex",flexDirection:"column"}}>
                                 <div className="articlelist-title"><strong>{item.title}</strong></div>
                                 <div className="articlelist-inf"><IconFont type="icon-24gl-tags"/>{item.type}<span className="kongge"></span><IconFont type="icon-shijian"/>{item.addTime}</div>
