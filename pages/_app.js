@@ -9,6 +9,7 @@ import '../styles/component/Classification.css'
 import '../styles/component/ArticleList.css'
 import '../styles/component/Footer.css'
 import '../styles/page/articleDeticle.css'
+import 'highlight.js/styles/monokai-sublime.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

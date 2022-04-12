@@ -1,26 +1,13 @@
-.deticles{
-    background-color: #E4DCDC;
-}
 .deticles-header{
-    width: 100%;
-    padding: 2rem;
-    height: 10rem;
+    padding: 16px;
     text-align: center;
 }
 .deticles-header .title{
-    font-size: 2.5rem;
+    font-size:24px;
 }
-.deticles-inf{
-    font-size: 1.2rem;
-    margin: 1.2rem 0rem;
-}
-.deticles-content{
-    width: 70rem;
-    margin:1rem 0rem 1rem calc(50% - 35rem);
-    padding: 1.2rem;
-    border-radius: 1rem;
-    background-color: #fff;
-    box-shadow: 2px 2px 10px 1px;
+.deticles-header .inf{
+    font-size: 18px;
+    margin: 10px 0px;
 }
 .show-html h1{
     font-size:30px;
@@ -36,7 +23,7 @@
 
 .show-html pre{
     display: block;
-    background-color:#f3f3f3;
+    /* background-color:#f3f3f3; */
     font-weight: 300;
     font-family: Menlo, monospace;
     padding: 5px;
@@ -61,4 +48,7 @@
     border-left:4px solid #cbcbcb ;
     padding: 10px 10px 10px 30px; 
     background-color: #f8f8f8;
+}
+.show-nav-title{
+    margin-left: 32px;
 }
