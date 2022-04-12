@@ -8,6 +8,7 @@ import '../styles/component/Author.css'
 import '../styles/component/Classification.css'
 import '../styles/component/ArticleList.css'
 import '../styles/component/Footer.css'
+import '../styles/page/articleDeticle.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

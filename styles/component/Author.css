@@ -1,28 +1,28 @@
 .author-contain{
-    border-radius: 1rem;
-    background-color: rgba(255,255,255,.8);
+    border-radius: 16px;
+    background-color: rgba(235,228,228,.8);
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
-.author-avatar{
+.author-contain .avatar{
     display: flex;
     justify-content: center;
-    padding: 1rem 0rem;
+    padding: 16px 0px;
 }
-.author-name{
+.author-contain .name{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 24px;
 }
-.author-inf{
+.author-contain .inf{
     text-align: center;
-    font-size: 1rem;
+    font-size: 16px;
 }
 .author-icon{
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-bottom: 16px;
 }
 .author-divider{
-    font-size: 1rem;
+    font-size: 16px;
     color: black;
 }

@@ -19,11 +19,7 @@ export default function Article(){
                     </Col>
                     <Col span={18}>
                         <div className="article-left">
-                            <ArticleList/>
-                            <div className="article-pagination">
-                            <Pagination size="small" total={50} />
-                            </div>
-                            
+                            <ArticleList/>                         
                         </div>
                     </Col>
                     <Col span={6}>

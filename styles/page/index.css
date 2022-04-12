@@ -5,25 +5,26 @@
     background-position: center;
     background-size: cover;
     background-image: url(../../static/img/wallhaven-m9q6e9_3840x2400.jpg);
+    position: relative;
 }
 .home-div{
     position: absolute;
-    width: 20rem;
-    height: 20rem;
+    width: 320px;
+    height: 320px;
     left: 50%;
     top: 50%;
-    margin-left: -10rem;
-    margin-top: -10rem;
+    margin: -160px 0 0 -160px;
 }
-.avatar-div{
+.home-div .avatar{
     display: flex;
     justify-content: center;
 }
 .inf-card{
+    margin-top: 30px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 22px;
     border: 0;
     background-color: rgba(0,0,0,0.3);
     color:rgb(255,255,255);
-    border-radius: .5rem;
+    border-radius: 10px;
 }

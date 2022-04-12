@@ -19,11 +19,11 @@ const Header = () =>{
             </Col>
             <Col span={16}>
                 <ul className='header-ul'>
-                    <li><IconFont type="icon-shouye" style={{fontSize:"1.5rem"}}/>首页</li>
-                    <li><IconFont type="icon-24" style={{fontSize:"1.5rem" }}/>文章</li>
-                    <li><IconFont type="icon-yinle" style={{fontSize:"1.5rem"}}/>音乐</li>
-                    <li><IconFont type="icon-liuyan" style={{fontSize:"1.5rem"}}/>留言</li>
-                    <li><IconFont type="icon-guanyu1" style={{fontSize:"1.5rem"}}/>关于</li>
+                    <li><IconFont type="icon-shouye" />首页</li>
+                    <li><IconFont type="icon-24" />文章</li>
+                    <li><IconFont type="icon-yinle" />音乐</li>
+                    <li><IconFont type="icon-liuyan" />留言</li>
+                    <li><IconFont type="icon-guanyu1" />关于</li>
                 </ul>
             </Col>
         </Row>

@@ -1,9 +1,9 @@
 .footer-div{
     text-align: center;
     width: 100%;
-    padding: 1rem;
-    color:#888;
+    padding: 16px;
+    color:#000;
 }
 .footer-div div{
-    margin: .5rem;
+    margin: 8px;
 }

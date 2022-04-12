@@ -1,11 +1,11 @@
 .classification-contain{
-    background-color: rgba(255,255,255,.8);
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    font-size: 1.2rem;
+    background-color: rgba(235,228,228,.8);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    font-size: 18px;
 }
 .classification-tags{
-    font-size: 1rem;
-    padding: 0rem .4rem;
+    font-size: 16px;
+    padding: 0px 6px;
 }

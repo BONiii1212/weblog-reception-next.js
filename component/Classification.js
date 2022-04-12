@@ -8,7 +8,7 @@ const IconFont = createFromIconfontCN({
 export default function Classification(){
     return(
         <div className="classification-contain">
-            <IconFont type="icon-24gl-tags" style={{fontSize:"1.5rem" }}/><span style={{marginLeft:'.4rem'}}>分类</span>
+            <IconFont type="icon-24gl-tags"/><span style={{marginLeft:'6px'}}>分类</span>
             <div className="classification-tags">
                 <span>前端学习（10）</span><br/>
                 <span>论文阅读（9）</span><br/>
