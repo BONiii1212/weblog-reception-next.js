@@ -1,4 +1,4 @@
-import react,{useState} from "react";
+import react,{useState,useEffect} from "react";
 import { Col, Row} from "antd";
 import { createFromIconfontCN } from '@ant-design/icons';
 import Link from "next/link";
@@ -9,13 +9,16 @@ const IconFont = createFromIconfontCN({
 
 export default function ArticleList({articleList}){
     const [article,setArticle] = useState(articleList)
+    useEffect(()=>{
+        setArticle(articleList)   
+    })
     return (
         <div>
         {article.length===0?<span></span>:<div className="article-icon-word"><IconFont type="icon-24" />文章别表</div>}
         {article.length===0?<span className="sorry-nodata">抱歉，暂无数据</span>:
             article.map((item)=>
-                <Link href={"/articleDeticles?id="+item.id}>
-                    <div className="articlelist-item" key={item.id}>
+                <Link href={"/articleDeticles?id="+item.id} key={item.id}>
+                    <div className="articlelist-item">
                         <Row>
                             <Col span={8}>
                                 <div className="articlelist-img">
