@@ -1,7 +1,6 @@
 .articlelist-item{
     margin: 16px;
     padding: 8px;
-    height: 145px;
     position: relative;
 }
 .articlelist-item::before{
@@ -11,19 +10,21 @@
     border-radius: 100%;
     border: 3px solid #fff;
     background-color: #9E5ADD;
-    left: 1.5px;
-    margin-top: 54px;
+    top: 50%;
+    margin-left: -10px;
+    margin-left: -6px;
     position: absolute;
     z-index: 100;
 }
 .articlelist-item::after{
     content: "";
     width: 2px;
-    height: 190px;
+    height: calc(100% + 24px);
     background-color: #9E5ADD;
     position: absolute;
+    top: 0;
+    margin: auto;
     left: 10px;
-    margin-top: -165px;
     z-index: 99;
 }
 .articlelist-title{
@@ -48,6 +49,10 @@
     width: 224px;
     height: 128px;
     float: right;
+    position: absolute;
+    top: 50%;
+    margin-top: -64px;
+    margin-left: 30px;
 }
 .article-icon-word{
     height: 40px;
@@ -66,3 +71,14 @@
     margin-top: 10px;
     z-index: 100;
 }
+.article-icon-word::after{
+    content: "";
+    width: 2px;
+    height: 40px;
+    background-color: #9E5ADD;
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    z-index: 99;
+}
+

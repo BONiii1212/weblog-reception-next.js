@@ -1,5 +1,6 @@
 import React from 'react'
 import {Row,Col,Menu} from 'antd'
+import Link from 'next/link'
 import { createFromIconfontCN } from '@ant-design/icons';
 
 const IconFont = createFromIconfontCN({
@@ -19,7 +20,7 @@ const Header = () =>{
             </Col>
             <Col span={16}>
                 <ul className='header-ul'>
-                    <li><IconFont type="icon-shouye" />首页</li>
+                    <li><Link href="/article"><a><IconFont type="icon-shouye" />首页</a></Link></li>
                     <li><IconFont type="icon-24" />文章</li>
                     <li><IconFont type="icon-yinle" />音乐</li>
                     <li><IconFont type="icon-liuyan" />留言</li>

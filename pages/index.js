@@ -1,9 +1,10 @@
 import Header from "../component/Header"
-import { Card,Avatar,Divider } from "antd"
+import { Card,Avatar } from "antd"
 
 export default function Home() {
   return (
     <div className="home-background">
+      <title>BONiii的个人博客</title>
       <Header/>
       <div className="home-div">
         <div className="avatar"><Avatar size={150} src="https://avatars.githubusercontent.com/u/62984113?s=400&u=83b7b6434419620c6f85520a96092fb5a78d1058&v=4"/></div>
