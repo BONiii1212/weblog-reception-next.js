@@ -1,6 +1,5 @@
 .article{
-    background-size: cover;
-    background: url('../../static/img/wallhaven-1kegw1_1920x1080.png') fixed no-repeat 50%;
+    background-color: #F4F5F5;
 }
 .contain{
     width: 1120px;
@@ -13,11 +12,10 @@
     font-size: 32px;
     text-align: center;
     line-height: 80px;
-    color: rgba(255, 255, 255,.8);
 }  
 .article-left {
     border-radius: 16px;
-    background-color: rgba(235,228,228,.8);
+    background-color: #FFFFFF;
     margin-right: 16px;
     overflow: hidden;
 }
