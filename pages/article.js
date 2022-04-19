@@ -20,18 +20,14 @@ export default function Article(props){
             <Header/>
             <div className="contain">
                 <Row>
-                    <Col span={24} className="contain-title">
-                        <span>文章｜Article</span>
-                    </Col>
                     <Col span={18}>
                         <div className="article-left">
-                            <ArticleList articleList={articleList}/>                         
+                            <ArticleList articleList={articleList} typeInfo={typeInfo}/>                         
                         </div>
                     </Col>
                     <Col span={6}>
                         <div className="article-right">
                             <Author/>
-                            <Classification typeInfo={typeInfo}/>
                         </div>
                     </Col>
                 </Row>

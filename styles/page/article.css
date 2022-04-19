@@ -1,11 +1,7 @@
-.article{
-    background-color: #F4F5F5;
-}
 .contain{
     width: 1120px;
+    margin-top: 30px;
     margin-left: calc(50% - 560px);
-    border: 3px;
-    border-color: black;
 }
 .contain .contain-title{
     height: 80px;
@@ -14,26 +10,15 @@
     line-height: 80px;
 }  
 .article-left {
-    border-radius: 16px;
     background-color: #FFFFFF;
     margin-right: 16px;
     overflow: hidden;
 }
 .article-right{
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-direction: column;
-}
-.article-pagination{
-   padding: 16px;
-   display: flex;
-   justify-content: center;
-}
-.ant-pagination-item-active{
-    background:rgba(255, 255, 255,.8);
-    border-color:rgba(255, 255, 255,.8);
-}
-.ant-pagination-item{
-    background:rgba(255, 255, 255,.8);
 }
 .sorry-nodata{
     font-size: 20px;

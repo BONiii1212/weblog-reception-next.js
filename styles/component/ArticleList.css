@@ -1,84 +1,34 @@
 .articlelist-item{
-    margin: 16px;
-    padding: 8px;
+    padding: 8px 12px 0 16px;
+    position: relative;
+    overflow: hidden;
+}
+.articlelist-item .title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.articlelist-item .tag{
+    margin-right: 16px;
     position: relative;
 }
-.articlelist-item::before{
+.articlelist-item .tag::before{
     content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    background-color: #9E5ADD;
-    top: 50%;
-    margin-left: -10px;
-    margin-left: -6px;
+    width: 1px;
+    height: 16px;
+    left:100%;
+    margin: -8px 0 0 8px;
+    top:50%;
     position: absolute;
-    z-index: 100;
+    background-color: #e5e6eb;
 }
-.articlelist-item::after{
-    content: "";
-    width: 2px;
-    height: calc(100% + 24px);
-    background-color: #9E5ADD;
+.articlelist-item .introduce{
+    color: #4e5969;
+    margin: 8px 0 8px 0;
+}
+.articlelist-item .image{
     position: absolute;
-    top: 0;
-    margin: auto;
-    left: 10px;
-    z-index: 99;
+    width: 199px;
+    height: 83px;
+    bottom: 8px;
 }
-.articlelist-title{
-    font-size: 20px;
-    margin: 8px;
-}
-.articlelist-inf{
-    font-size: 16px;
-    margin: 8px;
-    color: #7B7A79;
-}
-.articlelist-introduce{
-    font-size: 16px;
-    margin: 8px;
-}
-.kongge{
-    margin-right: 8px;
-}
-.articlelist-img{
-    overflow: hidden;
-    border-radius: 32px;
-    width: 224px;
-    height: 128px;
-    float: right;
-    position: absolute;
-    top: 50%;
-    margin-top: -64px;
-    margin-left: 30px;
-}
-.article-icon-word{
-    height: 40px;
-    font-size: 24px;
-    margin-left: 56px;
-}
-.article-icon-word::before{
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    background-color: #9E5ADD;
-    position: absolute;
-    left: 17.5px;
-    margin-top: 10px;
-    z-index: 100;
-}
-.article-icon-word::after{
-    content: "";
-    width: 2px;
-    height: 40px;
-    background-color: #9E5ADD;
-    position: absolute;
-    top: 20px;
-    left: 26px;
-    z-index: 99;
-}
-

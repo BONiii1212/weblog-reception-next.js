@@ -14,16 +14,15 @@ const Header = () =>{
     return(
         <div className='header'>
         <Row type="flex" justify='center'>
-            <Col span={8}>
+            <Col span={9}>
                 <span className='header-logo'>BONiii</span>
                 <span className='header-text'>个人博客</span>
             </Col>
-            <Col span={16}>
+            <Col span={15}>
                 <ul className='header-ul'>
-                    <li><Link href="/article"><a><IconFont type="icon-shouye" />首页</a></Link></li>
-                    <li><IconFont type="icon-24" />文章</li>
-                    <li><IconFont type="icon-yinle" />音乐</li>
-                    <li><IconFont type="icon-liuyan" />留言</li>
+                    <li><Link href="/"><a><IconFont type="icon-shouye" />首页</a></Link></li>
+                    <li><Link href="/article"><a><IconFont type="icon-24" />文章</a></Link></li>
+                    <li><IconFont type="icon-liuyan" />杂谈</li>
                     <li><IconFont type="icon-guanyu1" />关于</li>
                 </ul>
             </Col>

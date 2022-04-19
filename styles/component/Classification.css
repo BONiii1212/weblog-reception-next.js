@@ -1,11 +1,21 @@
-.classification-contain{
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    margin-bottom: 16px;
-    padding: 16px;
-    font-size: 18px;
+.classification {
+    padding: 12px;
+    border-bottom: 1px solid #F2F2F5;
 }
-.classification-tags{
-    font-size: 16px;
-    padding: 0px 6px;
+.classification ul{
+    display: flex; 
+}
+.classification ul li{
+    margin-right: 24px;
+    position: relative;
+}
+.classification ul li::before{
+    content: "";
+    width: 1px;
+    height: 16px;
+    left: 100%;
+    top: 50%;
+    margin: -8px 0 0 12px;
+    position: absolute;
+    background-color: #e5e6eb;
 }
