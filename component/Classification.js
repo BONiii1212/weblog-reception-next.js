@@ -8,7 +8,7 @@ const IconFont = createFromIconfontCN({
 });
 export default function Classification({typeInfo}){
     const handleClick = (id)=>{
-        id?router.push('article?id='+id):router.push('article')
+        id?router.push('posts?id='+id):router.push('/posts')
     }
     return(
         <div className="classification">

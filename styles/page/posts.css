@@ -1,0 +1,29 @@
+.contain{
+    width: 1120px;
+    margin-top: 30px;
+    margin-left: calc(50% - 560px);
+}
+.contain .contain-title{
+    height: 80px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 80px;
+}  
+.article-left {
+    background-color: #FFFFFF;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.article-right{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.sorry-nodata{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+    
+}
