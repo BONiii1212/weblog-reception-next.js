@@ -44,7 +44,7 @@ export default function ArticleDeticle(props){
                             {` • `}
                             <span>{article.typeName}</span> 
                         </div>
-                        <Link href="/"><a>back</a></Link>
+                        <Link href="/posts"><a>back</a></Link>
                     </div>
                     <h1 style={{color:"#111827", margin:"0px 0px 32px", fontSize:"36px"}}>{article.title}</h1>
                     <div className="show-html" dangerouslySetInnerHTML={{__html:marked(article.article_content)}}></div>
