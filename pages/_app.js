@@ -11,20 +11,14 @@ import '../styles/component/Footer.css'
 import '../styles/page/article.css'
 import 'highlight.js/styles/monokai-sublime.css'
 import '../styles/component/LoadingPage.css'
-import react,{useState, useEffect} from 'react'
-import router from "next/router";
+import '../styles/component/BackToTop.css'
+import '../styles/page/talk.css'
+import '../styles/page/aboutUs.css'
+import {useLoading} from '../utls/loading'
 import LoadingPage from '../component/LoadingPage'
 
 function MyApp({ Component, pageProps }) {
-  const [pageLoading,setPageLoading] = useState(false)
-  useEffect(()=>{
-    const handleStart = () => { setPageLoading(true); };
-    const handleComplete = () => { setPageLoading(false); };
-
-    router.events.on('routeChangeStart', handleStart);
-    router.events.on('routeChangeComplete', handleComplete);
-    router.events.on('routeChangeError', handleComplete);
-  },[router])
+  let pageLoading = useLoading()
 
   return (
       pageLoading?<LoadingPage/>:<Component {...pageProps} />

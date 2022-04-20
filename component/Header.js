@@ -1,5 +1,5 @@
-import React from 'react'
-import {Row,Col,Menu} from 'antd'
+import React,{useState} from 'react'
+import {Row,Col} from 'antd'
 import Link from 'next/link'
 import { createFromIconfontCN } from '@ant-design/icons';
 
@@ -10,7 +10,8 @@ const IconFont = createFromIconfontCN({
 /* 
 页面导航栏
 */
-const Header = () =>{
+const Header = ({id}) =>{
+    const [selectPage,setSelectPage] = useState(id)
     return(
         <div className='header'>
         <Row type="flex" justify='center'>
@@ -20,9 +21,18 @@ const Header = () =>{
             </Col>
             <Col span={15}>
                 <ul className='header-ul'>
-                    <li><Link href="/posts"><a><IconFont type="icon-24" />文章</a></Link></li>
-                    <li><a><IconFont type="icon-liuyan" />杂谈</a></li>
-                    <li><a><IconFont type="icon-guanyu1" />关于</a></li>
+                    {selectPage==0?
+                        <li><span className='active'><IconFont type="icon-24" />文章</span></li>:
+                        <li key={0}><Link href="/posts"><a><IconFont type="icon-24" />文章</a></Link></li>
+                    }
+                    {selectPage==1?
+                        <li><span className='active'><IconFont type="icon-liuyan" />杂谈</span></li>:
+                        <li key={1}><Link href="/talk"><a><IconFont type="icon-liuyan" />杂谈</a></Link></li>
+                    }
+                    {selectPage==2?
+                        <li><span className='active'><IconFont type="icon-guanyu1" />关于</span></li>:
+                        <li key={2}><Link href="/aboutUs"><a><IconFont type="icon-guanyu1" />关于</a></Link></li>
+                    }
                 </ul>
             </Col>
         </Row>

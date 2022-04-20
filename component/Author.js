@@ -14,9 +14,9 @@ export default function Author(){
             <div className="inf">🧑🏻‍💻 我也要成为加把劲骑士</div>
             <Divider className="author-divider">社交账号</Divider>
             <div className='author-icon'> 
-                <Avatar size={30} style={{color:"black", margin:'0 16px', backgroundColor:"rgb(255,255,255,0)" }} icon={<IconFont type="icon-github-fill" style={{ fontSize:"2rem" }}/>}/>
-                <Avatar size={30} style={{color:"black", margin:'0 16px', backgroundColor:"rgb(255,255,255,0)" }} icon={<IconFont type="icon-QQ" style={{ fontSize:"2rem" }}/>}/>
-                <Avatar size={30} style={{color:"black", margin:'0 16px', backgroundColor:"rgb(255,255,255,0)" }} icon={<IconFont type="icon-weixin" style={{ fontSize:"2rem" }}/>}/>
+                <a href="https://github.com/BONiii1212" target="_blank"><Avatar size={30} style={{color:"black", margin:'0 16px', backgroundColor:"rgb(255,255,255,0)" }} icon={<IconFont type="icon-github-fill" style={{ fontSize:"2rem" }}/>}/></a>
+                <div className="qq-father"><div className="qq"><Avatar size={30} style={{color:"black", margin:'0 16px', backgroundColor:"rgb(255,255,255,0)" }} icon={<IconFont type="icon-QQ" style={{ fontSize:"2rem" }}/>}/></div></div>
+                <div className="weixin-father"><div className="weixin"><Avatar size={30} style={{color:"black", margin:'0 16px', backgroundColor:"rgb(255,255,255,0)" }} icon={<IconFont type="icon-weixin" style={{ fontSize:"2rem" }}/>}/></div></div>
             </div>
         </div>
     )

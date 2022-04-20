@@ -6,6 +6,8 @@ import servicePath from "../config/appUrl";
 import Tocify from '../component/tocify.tsx'
 import { http } from "../utls/http";
 import Link from "next/link";
+import backToTop from "../component/backToTop";
+import BackToTop from "../component/backToTop";
 
 export default function ArticleDeticle(props){
     const [article,setArticle] = useState(props)

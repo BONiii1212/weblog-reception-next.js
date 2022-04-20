@@ -25,3 +25,43 @@
     font-size: 16px;
     color: black;
 }
+.qq-father{
+    position: relative;
+}
+.qq:hover::before{
+    content: "";
+    background-size: 100%;
+    background-image: url("../../static/img/IMG_2778\(20220420-202120\).JPG");
+    width: 152.4px;
+    height: 231.25px;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    margin-left: -76.2px;
+    animation: mymove 2s;
+    -webkit-animation: mymove 2s;
+}
+@keyframes mymove{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+@-webkit-keyframes mymove{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+.weixin-father{
+    position: relative;
+}
+.weixin:hover::before{
+    content: "";
+    background-size: 100%;
+    background-image: url("../../static/img/IMG_2777\(20220420-202100\).JPG");
+    width: 186.25px;
+    height: 241.86px;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    margin-left: -93.12px;
+    animation: mymove 2s;
+    -webkit-animation: mymove 2s;
+}

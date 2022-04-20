@@ -64,3 +64,19 @@
     color: #4B5563;
     text-decoration:underline;
 }
+.meta-line .meta span{
+    background-color: #E5E7EB;
+    border-radius: 4px;
+}
+.ant-anchor-link a{
+    color: #9CA3AF;
+}
+.ant-anchor-link-active .ant-anchor-link-title-active{
+    color: #323232 !important;
+}
+.ant-anchor-ink .ant-anchor-ink-ball{
+    border: 2px solid #323232;
+}
+.show-nav-title .nav-title strong{
+    font-size: 20px;
+}

@@ -5,17 +5,26 @@
 .classification ul{
     display: flex; 
 }
-.classification ul li{
+.classification ul a:hover{
+    color: #1890ff;
+}
+.classification ul a li{
     margin-right: 24px;
     position: relative;
+    cursor: pointer;
+}
+.classification ul span li{
+    margin-right: 24px;
+    position: relative;
+    color: #1890ff;
+    cursor: default;
 }
 .classification ul li::before{
     content: "";
     width: 1px;
     height: 16px;
-    left: 100%;
     top: 50%;
-    margin: -8px 0 0 12px;
+    margin: -8px 0 0 -13px;
     position: absolute;
     background-color: #e5e6eb;
 }

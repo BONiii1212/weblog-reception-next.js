@@ -1,0 +1,9 @@
+.back-to-top {
+    width: 100px;
+    height: 40px;
+    background-color: antiquewhite;
+}
+.back-to-top a{
+    font-weight: 600;
+    color: #9CA3AF;
+}
