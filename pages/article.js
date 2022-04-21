@@ -6,11 +6,11 @@ import servicePath from "../config/appUrl";
 import Tocify from '../component/tocify.tsx'
 import { http } from "../utls/http";
 import Link from "next/link";
-import backToTop from "../component/backToTop";
-import BackToTop from "../component/backToTop";
+import {MathJaxContext,MathJax} from 'better-react-mathjax'
 
 export default function ArticleDeticle(props){
     const [article,setArticle] = useState(props)
+
     const renderer = new marked.Renderer()
     marked.setOptions({
         renderer:renderer,
@@ -49,7 +49,9 @@ export default function ArticleDeticle(props){
                         <Link href="/posts"><a>back</a></Link>
                     </div>
                     <h1 style={{color:"#111827", margin:"0px 0px 32px", fontSize:"36px"}}>{article.title}</h1>
-                    <div className="show-html" dangerouslySetInnerHTML={{__html:marked(article.article_content)}}></div>
+                    <MathJax inline hideUntilTypeset={"first"} dynamic>
+                        <div className="show-html" dangerouslySetInnerHTML={{__html:marked(article.article_content)}}></div>
+                    </MathJax>
                 </div>
             </Col>
             <Col span={6}>

@@ -16,12 +16,27 @@ import '../styles/page/talk.css'
 import '../styles/page/aboutUs.css'
 import {useLoading} from '../utls/loading'
 import LoadingPage from '../component/LoadingPage'
+import {Head} from 'next/document'
+import {MathJaxContext} from 'better-react-mathjax'
 
 function MyApp({ Component, pageProps }) {
   let pageLoading = useLoading()
-
+  const config = {
+    loader: { load: ["[tex]/html"] },
+    tex: {
+      packages: { "[+]": ["html"] },
+      inlineMath: [
+        ["$", "$"],
+      ],
+      displayMath: [
+        ["$$", "$$"],
+      ]
+    }
+  };
   return (
-      pageLoading?<LoadingPage/>:<Component {...pageProps} />
+    <MathJaxContext config={config}>
+      {pageLoading?<LoadingPage/>:<Component {...pageProps} />}
+    </MathJaxContext>
     )
 }
 

@@ -38,12 +38,12 @@
     top: 46px;
     left: 50%;
     margin-left: -76.2px;
-    animation: mymove 2s;
-    -webkit-animation: mymove 2s;
+    animation: mymove 1s;
+    -webkit-animation: mymove 1s;
 }
 @keyframes mymove{
-    0% { opacity: 0;}
-    100% { opacity: 1;}
+    0% {  opacity: 0;}
+    100% {  opacity: 1;}
 }
 @-webkit-keyframes mymove{
     0% { opacity: 0;}
