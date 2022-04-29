@@ -34,7 +34,7 @@
 .header-ul li a{
     opacity: 0.5
 }
-.header-ul li a:hover{
+.header-ul .header-li:hover a{
     color: #000;
     position: relative;
     animation: fontmove 1s;

@@ -23,15 +23,15 @@ const Header = ({id}) =>{
                 <ul className='header-ul'>
                     {selectPage==0?
                         <li><span className='active'><IconFont type="icon-24" />文章</span></li>:
-                        <li key={0}><Link href="/posts"><a><IconFont type="icon-24" />文章</a></Link></li>
+                        <li className='header-li' key={0}><Link href="/posts"><a><IconFont type="icon-24" />文章</a></Link></li>
                     }
                     {selectPage==1?
                         <li><span className='active'><IconFont type="icon-liuyan" />杂谈</span></li>:
-                        <li key={1}><Link href="/talk"><a><IconFont type="icon-liuyan" />杂谈</a></Link></li>
+                        <li className='header-li' key={1}><Link href="/talk"><a><IconFont type="icon-liuyan" />杂谈</a></Link></li>
                     }
                     {selectPage==2?
                         <li><span className='active'><IconFont type="icon-guanyu1" />关于</span></li>:
-                        <li key={2}><Link href="/aboutUs"><a><IconFont type="icon-guanyu1" />关于</a></Link></li>
+                        <li className='header-li' key={2}><Link href="/aboutUs"><a><IconFont type="icon-guanyu1" />关于</a></Link></li>
                     }
                 </ul>
             </Col>

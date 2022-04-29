@@ -27,6 +27,7 @@
 }
 .qq-father{
     position: relative;
+    cursor: pointer;
 }
 .qq:hover::before{
     content: "";
@@ -51,6 +52,7 @@
 }
 .weixin-father{
     position: relative;
+    cursor: pointer;
 }
 .weixin:hover::before{
     content: "";
