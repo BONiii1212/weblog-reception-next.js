@@ -14,10 +14,13 @@ import '../styles/component/LoadingPage.css'
 import '../styles/component/BackToTop.css'
 import '../styles/page/talk.css'
 import '../styles/page/aboutUs.css'
+import '../styles/component/DayAndNightExchange.css'
+import '../styles/page/body.css'
 import {useLoading} from '../utls/loading'
 import LoadingPage from '../component/LoadingPage'
 import {Head} from 'next/document'
 import {MathJaxContext} from 'better-react-mathjax'
+import { SwitchProvider } from '../context/day-night-context'
 
 function MyApp({ Component, pageProps }) {
   let pageLoading = useLoading()
@@ -35,7 +38,9 @@ function MyApp({ Component, pageProps }) {
   };
   return (
     <MathJaxContext config={config}>
-      {pageLoading?<LoadingPage/>:<Component {...pageProps} />}
+      <SwitchProvider>
+        {pageLoading?<LoadingPage/>:<Component {...pageProps} />}
+      </SwitchProvider>
     </MathJaxContext>
     )
 }

@@ -1,0 +1,22 @@
+:root {
+    --light: #F4F5F5;
+    --dark: #121212;
+}
+/* 存储light模式 */
+body.light {
+    --background-color: var(--light);
+    --font-color: #374151;
+    --meta-line-color:#4B5563;
+    --article-list-background-color: #FFFFFF;
+}
+/* 存储dark模式 */
+body.dark{
+    --background-color: var(--dark);
+    --font-color: #d1d5db;
+    --meta-line-color:#F3F4F7;
+    --article-list-background-color: #000000;
+}
+body{
+    background-color: var(--background-color);
+    transition: background-color 0.6s;
+}

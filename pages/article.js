@@ -8,6 +8,9 @@ import { http } from "../utls/http";
 import Link from "next/link";
 import {MathJaxContext,MathJax} from 'better-react-mathjax'
 
+import dynamic from "next/dynamic";
+const DayAndNightExchange = dynamic(()=>import('../component/DayAndNightExchange'),{ssr:false})
+
 export default function ArticleDeticle(props){
     const [article,setArticle] = useState(props)
 
@@ -41,24 +44,27 @@ export default function ArticleDeticle(props){
                     <div className="meta-line">
                         <div className="meta">
                             <time>
-                                {`${month[Number(article.addTime.split('-')[1])]} ${Number(article.addTime.split('-')[2])} ${Number(article.addTime.split('-')[0])}`}
+                                {`${month[Number(article.addTime.split('-')[1])-1]} ${Number(article.addTime.split('-')[2])} ${Number(article.addTime.split('-')[0])}`}
                             </time>
                             {` • `}
                             <span>{article.typeName}</span> 
                         </div>
                         <Link href="/posts"><a>back</a></Link>
+                        <div className="day-night-switch">
+                            <DayAndNightExchange/>
+                        </div>
                     </div>
-                    <h1 style={{color:"#111827", margin:"0px 0px 32px", fontSize:"36px"}}>{article.title}</h1>
+                    <h1 className="article-h1">{article.title}</h1>
                     <MathJax inline hideUntilTypeset={"first"} dynamic>
                         <div className="show-html" dangerouslySetInnerHTML={{__html:marked(article.article_content)}}></div>
                     </MathJax>
                 </div>
             </Col>
             <Col span={6}>
-                <div className="show-nav-title">
+                {/* <div className="show-nav-title">
                     <div className='nav-title'><strong>文章目录</strong></div>
                     {tocify && tocify.render()}
-                </div>
+                </div> */}
             </Col>
         </Row>
     </div>

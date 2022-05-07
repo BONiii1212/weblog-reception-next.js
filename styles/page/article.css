@@ -1,16 +1,33 @@
+.article-h1{
+    color: var(--font-color);
+    margin: 0 0 32px;
+    font-size: 36px;
+    transition: color 0.6s;
+}
+.show-html{
+    color: var(--font-color);
+    transition: color 0.6s;
+}
 .show-html h1{
     font-size:30px;
+    color: var(--font-color);
+    transition: color 0.6s;
 }
-
 .show-html h2{
     font-size:28px;
+    color: var(--font-color);
+    transition: color 0.6s;
     border-bottom: 1px solid #cbcbcb;
 }
 .show-html h3{
     font-size:24px;
+    color: var(--font-color);
+    transition: color 0.6s;
 }
 .show-html p{
     font-size: 16px;
+    color: var(--font-color);
+    transition: color 0.6s;
 }
 .show-html pre{
     display: block;
@@ -50,19 +67,21 @@
     top: 80px;
 }
 .meta-line{
-    margin: 80px 0px 32px 0px;
+    margin: 80px 0px 24px 0px;
     color: #9CA3AF;
     font-size: 16px;
     display: flex;
-
 }
 .meta-line .meta{
+    height: 40px;
+    line-height: 40px;
     flex:1
 }
 .meta-line a{
     font-size: 16px;
-    color: #4B5563;
+    color: var(--meta-line-color);
     text-decoration:underline;
+    line-height: 40px;
 }
 .meta-line .meta span{
     background-color: #E5E7EB;
@@ -79,4 +98,10 @@
 }
 .show-nav-title .nav-title strong{
     font-size: 20px;
+}
+.meta-line .day-night-switch{
+    font-size: 24px;
+    color: var(--meta-line-color);
+    margin-left: 10px;
+    line-height: 40px;
 }
