@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { createFromIconfontCN } from '@ant-design/icons';
 import dynamic from 'next/dynamic'
 //页面使用ssr渲染的时候，react的生命周期中render()阶段负责创建虚拟dom，进行diff算法，更新dom树，
-//render及之前的阶段，并没有将组件渲染为实际的dom节点，所以不能获取window对象，如果是下面这样是可以拿到window对象的
+//render及之前的阶段，并没有将组件渲染为实际的dom节点，所以不能获取document对象，如果是下面这样是可以拿到document对象的
 const DayAndNightExchange = dynamic(()=>import('./DayAndNightExchange'),{ssr: false})
 
 const IconFont = createFromIconfontCN({

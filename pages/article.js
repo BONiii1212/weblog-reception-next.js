@@ -7,8 +7,8 @@ import Tocify from '../component/tocify.tsx'
 import { http } from "../utls/http";
 import Link from "next/link";
 import {MathJaxContext,MathJax} from 'better-react-mathjax'
-
 import dynamic from "next/dynamic";
+
 const DayAndNightExchange = dynamic(()=>import('../component/DayAndNightExchange'),{ssr:false})
 
 export default function ArticleDeticle(props){
